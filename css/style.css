@@ -1,0 +1,479 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: #7EBA6F;
+}
+.header{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: #7EBA6F;
+
+}
+.hamburger{
+  width: 50px;
+  height: 25px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  right: 90px;
+  top: 25px;
+  cursor: pointer;
+  z-index: 100;
+  transition: transform 0.5s ease;
+}
+.mangoHanging{
+  width: 408px;
+  height: 651px;
+  position: absolute;
+  top: 0px;
+  left: 15%;
+  transition: transform 0.5s ease-in;
+  transform: translateY(-700px);
+}
+.mangoHanging img{
+  width: 100%;
+  height: 100%;
+}
+.slideIn{
+  transition: transform 0.5s ease-in;
+  transform: translateY(0px);
+}
+.line{
+  width: 100%;
+  height: 3.5px;
+  background-color: white;
+}
+.line1{
+  width: 70%;
+  height: 3.5px;
+  background-color: white;
+  align-self: flex-end;
+}
+.nav-bar{
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.27);
+  position: absolute;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-out;
+  transform: translateX(800px);
+  z-index: 10;
+}
+
+.navSlide{
+  transition: transform 0.5s ease-out;
+  transform: translateX(0px);
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.links a{
+  font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 75px;
+display: flex;
+align-items: center;
+letter-spacing: 0.1em;
+text-transform: capitalize;
+
+color: #FFF5F5;
+
+
+}
+.links{
+  margin: 80px 0 80px 0;
+
+}
+.rotateHam{
+  transition: transform 0.5s ease;
+  transform: rotate(90deg);
+}
+.middle-section{
+  position: relative;
+  width: 100%;
+  height: 50%;
+  display: flex;
+
+}
+.left-text{
+
+  position: relative;
+  background-color: green;
+  transition: all 0.5s ease-In;
+  transform: translateX(0px);
+    z-index: 100;
+}
+.title {
+  position: absolute;
+  width: 700px;
+  top: 289px;
+  left: 170px;
+
+
+
+}
+.title h1{
+  font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 75px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F7F7F7;
+
+text-shadow: 0px 15px 15px rgba(0, 0, 0, 0.25);
+
+}
+.moveLeft{
+  transition: transform 0.5s ease-out;
+transform: translateX(-800px);
+}
+.middle-text{
+  width: 529px;
+height: 681px;
+
+position: absolute;
+top: 60px;
+left: 500px;
+transition: transform 0.5s ease-in;
+transform: translateY(0px);
+
+}
+
+.middle-text img{
+  width: 100%;
+  height: 100%;
+}
+.moveDown{
+  transition: transform 0.5s ease-out;
+  transform: translateY(700px);
+}
+.right-text{
+
+  position: relative;
+  background-color: yellow;
+}
+.logo{
+  width: 570px;
+height: 193px;
+position: absolute;
+top: 415px;
+left:845px;
+background: url("../images/mangoLogo-removebg-preview.png");
+filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.25));
+transition: transform 0.5s ease-in;
+transform: translateX(0px);
+}
+.moveRight{
+  transition: transform 0.5s ease-out;
+  transform: translateX(800px);
+}
+
+/**************************recipre*****************/
+.recipe{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+.recipe-title h1{
+  font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 35px;
+line-height: 52px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+color: rgba(255, 255, 255, 0.8);
+}
+.leftImg{
+  width: 257.82px;
+  height: 646.12px;
+  position: absolute;
+  left: -20px;
+  bottom: -70px;
+  transform: rotate(35deg);
+  filter: drop-shadow(0px 80px 50px rgba(0, 0, 0, 0.2));
+
+
+}
+.leftImg img{
+  width: 100%;
+  height: 100%;
+}
+.rightImg{
+  width: 500px;
+  height: 650px;
+  position: absolute;
+  right: -100px;
+  bottom: -100px;
+}
+.rightImg img{
+  width: 100%;
+  height: 100%;
+}
+.recipe-container{
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  z-index: 10;
+  background: linear-gradient(116.02deg, rgba(255, 255, 255, 0.6) -0.56%, rgba(255, 255, 255, 0.15) 99.23%);
+backdrop-filter: blur(98px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 30px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+}
+.card{
+  width: 300px;
+  height: 350px;
+  background: linear-gradient(278.26deg, rgba(255, 255, 255, 0.6) -2.75%, rgba(255, 255, 255, 0.4) 96.88%);
+border-radius: 30px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: column;
+}
+.cardImg{
+  width: 85%;
+height: 270px;
+background-color: white;
+filter: drop-shadow(0px 19px 100px rgba(0, 0, 0, 0.25));
+border-radius: 30px;
+margin-top: 14px;
+}
+.cardImg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.cardText{
+  width: 85%;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardText h3{
+  font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 52px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #8C8B8B;
+}
+
+/**************blog********************/
+.blog{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog-container{
+  width: 70%;
+  height: 90%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.blog-top{
+  width: 100%;
+  height: 45%;
+  background: linear-gradient(96.84deg, rgba(255, 255, 255, 0.48) -2.26%, rgba(255, 255, 255, 0.12) 103.02%);
+backdrop-filter: blur(30px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 30px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.blog-bottom{
+  width: 100%;
+  height: 45%;
+  background: linear-gradient(96.84deg, rgba(255, 255, 255, 0.48) -2.26%, rgba(255, 255, 255, 0.12) 103.02%);
+backdrop-filter: blur(30px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.blog-group{
+  width: 90%;
+  height: 90%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-text{
+  width: 65%;
+  height: 85%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text{
+  height: 70%;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border-right: 3px solid blur(4px);
+
+}
+.container-text h2{
+align-self: flex-start;
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 37px;
+display: flex;
+align-items: center;
+letter-spacing: 0.05em;
+text-transform: capitalize;
+}
+.container-text p{
+  font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 22px;
+display: flex;
+align-items: center;
+letter-spacing: 0.05em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+}
+.container-img{
+  width: 35%;
+  height: 85%;
+
+  border-radius: 30px;
+}
+.container-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+/**********join************/
+.join{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.join-container{
+  width: 55%;
+  height: 60%;
+  background: linear-gradient(116.02deg, rgba(255, 255, 255, 0.6) -0.56%, rgba(255, 255, 255, 0.15) 99.23%);
+  backdrop-filter: blur(98px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.join-form{
+  width: 50%;
+  height: 90%;
+
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+}
+.join-form input{
+  width: 95%;
+  height: 50px;
+  background: linear-gradient(91.04deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.4) 100%);
+backdrop-filter: blur(100px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 30px;
+border: none;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 30px;
+display: flex;
+align-items: center;
+letter-spacing: 0.1em;
+text-transform: capitalize;
+
+color: #585858;
+outline-offset: none;
+outline: none;
+
+}
+#submit{
+  width: 30%;
+
+
+background: linear-gradient(93.95deg, rgba(126, 186, 111, 0.48) 0%, rgba(255, 255, 255, 0.12) 100%);
+backdrop-filter: blur(100px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
